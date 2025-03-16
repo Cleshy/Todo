@@ -17,48 +17,20 @@
   <body>
     <main>
       <!-- Todo App -->
-      <div class="todo-container">
-        <div class="todo">
+      <div class="app-container">
+        <div class="app">
           <h1>Todo App</h1>
-          <form class="todo-form">
+          <form>
             <input
-              class="todo-input"
+              id="user-input"
               type="text"
-              placeholder="e.g do the dishes..."
+              placeholder="e.g do the dishes"
+              autocomplete="off"
+              required
             />
-            <button class="todo-add">Add</button>
+            <button type="submit" class="add-todo">Add</button>
           </form>
-          <ul class="todos" id="todos">
-            <li class="todo-item">
-              <div class="checkbox-container">
-                <input class="todo-checkbox" type="checkbox" id="todo-1" />
-                <label class="todo-text" for="todo-1">Do the dishes</label>
-              </div>
-              <button class="todo-remove">
-                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
-              </button>
-            </li>
-
-            <li class="todo-item">
-              <div class="checkbox-container">
-                <input class="todo-checkbox" type="checkbox" id="todo-2" />
-                <label class="todo-text" for="todo-2">Take out the trash</label>
-              </div>
-              <button class="todo-remove">
-                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
-              </button>
-            </li>
-
-            <li class="todo-item">
-              <div class="checkbox-container">
-                <input class="todo-checkbox" type="checkbox" id="todo-3" />
-                <label class="todo-text" for="todo-3">Buy groceries</label>
-              </div>
-              <button class="todo-remove">
-                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
-              </button>
-            </li>
-          </ul>
+          <div class="todos" id="todos"></div>
         </div>
       </div>
       <!-- Background -->
