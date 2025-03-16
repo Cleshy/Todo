@@ -2,8 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
+    <title>Todo App by Cleshy</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- Todo App -->
+      <div class="todo-container">
+        <div class="todo">
+          <h1>Todo App</h1>
+          <form class="todo-form">
+            <input
+              class="todo-input"
+              type="text"
+              placeholder="e.g do the dishes..."
+            />
+            <button class="todo-add">Add</button>
+          </form>
+          <ul class="todos" id="todos">
+            <li class="todo-item">
+              <div class="checkbox-container">
+                <input class="todo-checkbox" type="checkbox" id="todo-1" />
+                <label class="todo-text" for="todo-1">Do the dishes</label>
+              </div>
+              <button class="todo-remove">
+                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
+              </button>
+            </li>
+
+            <li class="todo-item">
+              <div class="checkbox-container">
+                <input class="todo-checkbox" type="checkbox" id="todo-2" />
+                <label class="todo-text" for="todo-2">Take out the trash</label>
+              </div>
+              <button class="todo-remove">
+                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
+              </button>
+            </li>
+
+            <li class="todo-item">
+              <div class="checkbox-container">
+                <input class="todo-checkbox" type="checkbox" id="todo-3" />
+                <label class="todo-text" for="todo-3">Buy groceries</label>
+              </div>
+              <button class="todo-remove">
+                <ion-icon class="remove-icon" name="trash-sharp"></ion-icon>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Background -->
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
